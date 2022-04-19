@@ -1,4 +1,4 @@
-const Food = require("../models/foodSchema")
+const Food = require("../models/foodSchema");
 
 
 
