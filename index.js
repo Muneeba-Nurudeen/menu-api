@@ -7,13 +7,13 @@ const userRoute = require("./routes/userRoute")
 
 const app = express()
 
-connectDB()
+connectDB();
 
 //Middlewares
 app.use(express.json())
 app.use(morgan("dev"))
 app.use(foodRoute)
-app.use(userRoute)
+app.use("/api", userRoute)
 
 const PORT = process.env.PORT||9000
 
